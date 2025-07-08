@@ -9,7 +9,12 @@ public class Main {
          for (Vehiculo vehiculo : vehiculos) {
             vehiculo.mostrarDatos();
               System.out.println("el impuesto es de: "+  vehiculo.calcularImpuesto());
+              
          }
+                 RegistroMunicipal registro = new RegistroMunicipal();
+        registro.buscarPorAño(vehiculos, 2020);
+        registro.buscarPorDueño(vehiculos, "luis");
+        
     }
     
 }
